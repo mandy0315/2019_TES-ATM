@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="image/tes.ico"> 
+    <title>宸展光電ATM Service</title>
+    <link rel="stylesheet" href="css/all.css">
+    <!-- animate css -->
+    <link rel='stylesheet' href='css/animate.css'>
+
+    <!-- js -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- data time -->
+    <script src="js/date&time.js" ></script>
+    <!-- animate -->
+    <script src='js/wow.min.js'></script>
+    <script  src="js/animate.wow.js"></script>
+    <!-- 轉跳時間 setInterval -->
+    <script>
+        var t=5;//设定跳转的时间 
+        setInterval("refer()",1000); //启动1秒定时 
+        function refer(){  
+            if(t==0){ 
+                location="vtm-complate.html"; //#设定跳转的链接地址 
+            } 
+            t--; // 计数器递减 
+            }
+    </script>
+</head>
+<body>
+    <div class="container page_bg">
+        <header>
+            <img src="image/header_bg.png" alt="">
+            <div class="logo_two"><a href="#">tes</a></div>
+            <!-- date -->
+            <div class="date"></div>
+            <div class="time"></div>
+            <!-- date end-->
+        </header>
+        <section class="no-padding">
+            <div class="vtm-processing">
+                <ul>
+                    <li class="icon vtm-icon">
+                        <ul>
+                            <li><div data-wow-iteration="100" class="wow fadeInUp"><img src="image/arrow.svg" alt="" class="arrow"></div>
+                            </li>
+                            <li><img src="image/customer.svg" alt="" class="customer"></li>
+                        </ul>
+                    </li>
+                    <li class="title_b vtm-title_b">
+                        <h2>VTM Connection,<br>Please Wait…..</h2>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,1 @@
+var oTimerId;function Timeout(){location.href="index.html"}function ReCalculate(){clearTimeout(oTimerId),oTimerId=setTimeout("Timeout()",10*1*1e3)}document.onmousedown=ReCalculate,document.onmousemove=ReCalculate,ReCalculate()
